@@ -1,0 +1,4 @@
+/dataset/
+.vscode/
+/yolo_env/
+/runs/segment/predict/
