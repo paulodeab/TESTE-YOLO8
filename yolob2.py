@@ -1,7 +1,7 @@
 import cv2
 from ultralytics import YOLO
 
-def run_segmentation(model_path, source=0, conf_threshold=0.70):
+def run_segmentation(model_path, source=0, conf_threshold=0.50):
     """
     Executa a segmentação em tempo real usando o modelo YOLOv8-Seg com confiança mínima de 70%.
 
