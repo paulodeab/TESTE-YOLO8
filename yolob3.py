@@ -47,10 +47,10 @@ def run_segmentation(model_path, source=0):
     cv2.destroyAllWindows()
 
 # Caminho para o modelo YOLOv8-Seg treinado
-model_path = "runs/segment/train/weights/best.pt"  # Substitua pelo caminho correto do seu modelo
+model_path = "runs/segment/train2/weights/best2.pt"  # Substitua pelo caminho correto do seu modelo
 
 # Fonte de vídeo: 0 para webcam, ou caminho para um arquivo de vídeo
-source = 1  # Para webcam, ou 'caminho/para/video.mp4' para vídeo
+source = 'v1.mp4'  # Para webcam, ou 'caminho/para/video.mp4' para vídeo
 
 # Executa o teste de segmentação
 run_segmentation(model_path, source)

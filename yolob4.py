@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from ultralytics import YOLO
 
-def run_segmentation(model_path, source=0, confidence_threshold=0.75):
+def run_segmentation(model_path, source=0, confidence_threshold=0.879):
     """
     Executa a segmentação em tempo real usando o modelo YOLOv8-Seg.
 
@@ -66,7 +66,7 @@ def run_segmentation(model_path, source=0, confidence_threshold=0.75):
 model_path = "runs/segment/train/weights/best.pt"  # Substitua pelo caminho correto do seu modelo
 
 # Fonte de vídeo: 0 para webcam, ou caminho para um arquivo de vídeo
-source = 'video.mp4'  # Para webcam, ou 'caminho/para/video.mp4' para vídeo
+source = 'v1.mp4'  # Para webcam, ou 'caminho/para/video.mp4' para vídeo
 
 # Executa o teste de segmentação
 run_segmentation(model_path, source)

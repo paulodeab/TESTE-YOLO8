@@ -32,7 +32,7 @@ while True:
     frame_resized = cv2.resize(frame, (640, 360))
 
     # Fazer inferência
-    results = model.predict(frame_resized, device=device, conf=0.5, half=True, verbose=False)
+    results = model.predict(frame_resized, device=device, conf=0.88, half=True, verbose=False)
 
     # Plotar os resultados diretamente no quadro
     annotated_frame = results[0].plot()
